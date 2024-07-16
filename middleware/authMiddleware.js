@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 require("dotenv").config();
 // const secretKey = 'Rahman@1234';
-const httpStatusCode = require('../constant/httpStatusCode');
+const httpStatusCode = require('../constants/httpStatusCode');
 
 async function getToken(user) {
     const token = await jwt.sign({ user }, process.env.JWT_SECRET, { expiresIn: '1d' });

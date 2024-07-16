@@ -24,7 +24,7 @@ async function SendEmail(email,username) {
     template = template.replace('[Username]', username);
     // send mail with defined transport object
     const info = await transporter.sendMail({
-      from: '"NextGenEdu" <hibbanrahmanhyt@gmail.com>',
+      from: '"HMZ hotel-booking" <hibbanrahmanhyt@gmail.com>',
       to: email,
       subject: "Congratulations",
       html: template,
