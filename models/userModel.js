@@ -14,6 +14,10 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    DOB:{
+      type:String,
+      required:false
+    },
     phone: {
       type: String,
       required: false,
@@ -31,6 +35,10 @@ const UserSchema = new mongoose.Schema(
       required: false,
     },
     city: {
+      type: String,
+      required: false,
+    },
+    state:{
       type: String,
       required: false,
     },
