@@ -49,13 +49,13 @@ const UserSchema = new mongoose.Schema(
     wishlist:[
       {
         type:mongoose.Schema.Types.ObjectId,
-        ref:'course'
+        ref:'Hotels'
       }
     ],
     reviews: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "review",
+        ref: "Hotels",
       },
     ],
     role: {
